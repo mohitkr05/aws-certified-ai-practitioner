@@ -79,3 +79,55 @@ Reinforcement learning is a type of machine learning where an agent learns to ma
 - **Target Variable not available**: This indicates scenarios where the model must control the environment without specific target variables.
   - **Control**: Here, the model controls an environment directly to optimize certain behaviors or outcomes, such as in "Driverless Cars".
 
+
+
+###  Use cases
+
+Based on the provided text, here is a table summarizing the types of machine learning, their definitions, and use cases:
+
+| **Learning Type**        | **Definition**                                                                                                                                               | **Use Case**                                                                                                                                                             |
+|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Supervised Learning**  | Model is trained with labeled data consisting of input features and corresponding known output labels.                                                       | Predicting whether an individual has a disease based on diagnostic test results (Binary Classification).                                                                 |
+| **Classification**       | A type of supervised learning where the target values are categorical (discrete).                                                                           | - **Binary Classification:** Medical diagnosis (disease or not).<br> - **Multiclass Classification:** Predicting the topic of a document (e.g., religion, politics).  |
+| **Regression**           | A type of supervised learning where the target values are continuous (numeric).                                                                              | - **Linear Regression:** Predicting house prices based on features like number of bathrooms and square footage. <br> - **Logistic Regression:** Predicting heart disease likelihood.|
+| **Unsupervised Learning**| Model is trained with input data that does not have corresponding output labels. The goal is to discover patterns or groupings in the data.                 | Segmenting customers into groups by purchase history (Clustering).                                                                                                       |
+| **Clustering**           | A type of unsupervised learning where data is grouped into clusters based on similarity.                                                                    | Segmenting customers into groups by purchase history or clickstream activity.                                                                                            |
+| **Anomaly Detection**    | A type of unsupervised learning focused on identifying rare items, events, or observations that differ significantly from the majority of the data.          | Detecting failed sensors or identifying medical errors.                                                                                                                  |
+
+This table provides an overview of the main types of machine learning discussed, along with their definitions and practical use cases.
+
+
+## How to identify what type of ML is best for your use case?
+
+![Alt text](Data-ML-Types-chart.drawio.png)
+
+```mermaid
+graph TD
+  A[Machine Learning Types]
+  
+  A --> B[Supervised Learning]
+  A --> C[Unsupervised Learning]
+  
+  B --> D[Classification]
+  B --> E[Regression]
+  
+  C --> F[Clustering]
+  C --> G[Anomaly Detection]
+
+  D --> H[Binary Classification]
+  D --> I[Multiclass Classification]
+  
+  E --> J[Linear Regression]
+  E --> K[Logistic Regression]
+  
+  H --> L[Example: Medical Diagnosis]
+  I --> M[Example: Document Topic Classification]
+  
+  J --> N[Example: House Price Prediction]
+  K --> O[Example: Heart Disease Prediction]
+  
+  F --> P[Example: Customer Segmentation]
+  G --> Q[Example: Sensor Failure Detection]
+```
+
+

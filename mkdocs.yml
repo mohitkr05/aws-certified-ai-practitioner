@@ -1,1 +1,24 @@
-site_name: My Docs
+site_name: AWS Certified AI Practitioner
+
+nav:
+  - Home: index.md
+  - TS1 1: 
+      - AI Terms: TS1-1/1-domain-1-intro.md
+      - Machine Learning Fundamental: TS1-1/2-machine-learning-fudamental.md
+  - TS1 2:
+      - Fraud Detector: TS1-2/fraud-detector.md
+      - Kendra: TS1-2/kendra.md
+      - Polly: TS1-2/polly.md
+      - Rekognition: TS1-2/rekognition.md
+      - Textract: TS1-2/textract.md
+      - Bedrock: TS1-2/bedrock.md
+
+theme:
+  name: material
+
+plugins:
+  - search
+
+markdown_extensions:
+  - toc:
+      permalink: true
