@@ -1,6 +1,50 @@
 # Machine Learning Fundamentals
 
-Machine learning is the science of developing algorithms that computers use to learn from data and perform tasks without explicit instructions.
+Machine learning is the science of developing algorithms that computers use to learn from data and perform tasks without explicit 
+instructions.
+
+
+  Training: Known Data --> Features --> Algorithm (training) --> Output (reliability)
+  
+  Training gives you
+    - Model artifacts - Trained parameters, model definition (how to compute inferences, other metadata)
+    - Inference code - Software that implements the model 
+
+
+  Hosting a model
+    - endpoint is always available i.e. Real time inference - Persistent endpoint 
+    - batch job - offline, large amount of data and infrequent use 
+  
+  
+  
+  Inference : New data --> Features --> Model --> Output 
+
+Types of Structured data
+ - csv, rds, redshift, sql 
+ - for model training it can be put in s3
+
+
+Semi  structured 
+ - json, yaml, xml
+ - DynamoDB, DocumentDb
+ - Export it into S3
+
+
+Unstructured data
+ - images, video , social media post
+ - objects in S3
+
+  Tokenization
+
+  - Breaks down tasks into smaller tasks that can be done in parallel, e.g words or phrases
+
+Time-series data
+ - Performance metrics
+ - Uses datetime
+
+
+To create a  model we need an algorithm which contains mathematical relationship between output and input. 
+
 
 ## Key concepts:
 
@@ -35,3 +79,10 @@ Machine learning is the science of developing algorithms that computers use to l
   - Model comparison: Comparing different models to determine which one is best.
 - Deployment: Use the trained model to make predictions on new data.
   - Model serving: Deploying the model to a production environment to make predictions on new data.
+
+
+
+### Supervised learning 
+
+Consider this scenario of Supervised learning.
+
